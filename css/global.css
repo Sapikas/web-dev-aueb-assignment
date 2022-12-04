@@ -355,7 +355,7 @@ fieldset {
   margin-bottom: 10px;
 }
 
-.form-input-material input, textarea {
+.form-input-material input, textarea, select {
   border-radius: 15px;
   border: 1px solid var(--light-gray);
   padding: 10px;
@@ -376,6 +376,11 @@ fieldset {
   border-radius: 30px;
   cursor: pointer;
   font-size: 18px;
+}
+
+.btn:hover {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
 }
 
 /*
