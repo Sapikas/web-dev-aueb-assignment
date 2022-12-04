@@ -1,0 +1,41 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+}
+
+.form-input-material {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-input-material input, textarea {
+  border-radius: 15px;
+  border: 1px solid var(--light-gray);
+  padding: 10px;
+}
+
+.form-input-material label {
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  color: var(--white);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}

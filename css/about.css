@@ -1,0 +1,15 @@
+.about-us {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.username {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 599px) {
+  .about-us {
+    flex-direction: column;
+  }
+}
