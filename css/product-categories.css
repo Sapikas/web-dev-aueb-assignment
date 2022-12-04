@@ -27,7 +27,7 @@
   padding-right: 1.5rem;
 }
 
-@media (max-width: 559px) {
+@media (max-width: 480px) {
   .categories {
     flex-direction: column;
     padding: 10px 20px;

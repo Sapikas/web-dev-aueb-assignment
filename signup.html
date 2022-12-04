@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrapper site-header_wrapper">
+      <a href="#" class="brand">Brand</a>
+      <nav class="nav">
+        <img class="nav_toggle" aria-expanded="false" src="/images/icons8-menu-50.png" alt="burger menu"/>
+        <ul class="nav_wrapper">
+          <li class="nav_item active"><a href="#">Home</a></li>
+          <li class="nav_item"><a href="about.html">Σχετικά με εμάς</a></li>
+          <li class="nav_item"><a href="product-categories.html">Κατηγορίες</a></li>
+          <li class="nav_item"><a href="contact.html">Contact</a></li>
+          <li class="nav_item"><a class="button" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+    <form onsubmit="validateData(event)" class="login-form" action="">
+      <h1>Εγγραφή</h1>
+      <fieldset>  
+        <legend>Προσωπικά Στοιχεία:</legend>
+        <div class="form-input-material">
+          <label for="username">Ονοματεπώνυμο</label>
+          <input type="text" name="username" id="username" placeholder="Elon Musk" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="elon@tesla.com" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="address">Διεύθυνση Κατοικίας</label>
+          <input type="text" name="address" id="address" placeholder="Ι. Γκουρα 1" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="region">Περιοχή</label>
+          <input type="text" name="region" id="region" placeholder="Νίκαια" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="prefecture">Νομός</label>
+          <input type="text" name="prefecture" id="prefecture" placeholder="Αττική" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="date">Ημ/νια Γέννησης</label>
+          <input type="date" name="date" id="date" placeholder=" " autocomplete="on" class="form-control-material" min="1922-12-31" required />
+        </div>
+        <div class="form-input-material">
+          <label for="phone">Τηλέφωνο</label>
+          <input type="tel" name="phone" id="phone" placeholder="6974993021" autocomplete="on" class="form-control-material" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Πληρωμή και Αποστολή:</legend>
+        <div class="form-input-material">
+          <label for="payment">Τρόπος Πληρωμής</label>
+          <select name="payment" id="payment">
+            <option value="paypal">Paypal</option>
+            <option value="credit-cart">Πιστωτική Κάρτα</option>
+            <option value="cash-on-delivery">Αντικαταβολή</option>
+          </select>
+        </div>
+        <div class="form-input-material">
+          <label for="address">Διεύθυνση Αποστολής</label>
+          <input type="text" name="address" id="address" placeholder="Ι. Γκουρα 1" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="region">Περιοχή</label>
+          <input type="text" name="region" id="region" placeholder="Νίκαια" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="prefecture">Νομός</label>
+          <input type="text" name="prefecture" id="prefecture" placeholder="Αττική" autocomplete="on" class="form-control-material" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Account:</legend>
+        <div class="form-input-material">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="DimiS" autocomplete="on" class="form-control-material" required />
+        </div>
+        <div class="form-input-material">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="12345!g" autocomplete="on" class="form-control-material" minlength="3" required />
+        </div>
+        <div class="form-input-material">
+          <label for="confirm_password">Password Repeat</label>
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="12345!g" autocomplete="on" class="form-control-material" minlength="3" required />
+        </div>
+      </fieldset>
+     <fieldset>
+        <legend>Επικοινωνία:</legend>
+        <div class="form-input-material">
+          <label for="paymentMethods">Επιλογές Επικοινωνίας</label>
+          <select name="paymentMethods" id="paymentMethods">
+            <option value="sms">SMS</option>
+            <option value="email">Email</option>
+            <option value="viber">Viber</option>
+            <option value="whatApp">WhatsApp</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary btn-ghost">Υποβολή</button>
+    </form>
+  </div>
+  </main>
+  <footer>
+    <div class="row_primary">
+      <div class="column_about">
+        <h3>Foolish Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+          voluptatem corporis error non,
+        </p>
+      </div>
+      <div class="column_links">
+        <h3>Some Links</h3>
+        <ul>
+          <li>
+            <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+            <a href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li>
+            <a href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li>
+            <a href="#support">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column_links">
+        <h3>Some Links</h3>
+        <ul>
+          <li>
+            <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+            <a href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li>
+            <a href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li>
+            <a href="#support">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row_copyright">
+      <p>Copyright &copy; 2021</p>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
+  

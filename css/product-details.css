@@ -18,7 +18,7 @@
   gap: 50px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .product-preview {
     flex-direction: column;
   }
@@ -92,7 +92,7 @@ ol span {
   flex-basis: 50%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .list-item {
     flex-direction: column;
   }
