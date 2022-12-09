@@ -1,11 +1,18 @@
 .about-us {
   display: flex;
+  justify-content: center;
   gap: 40px;
   margin-top: 40px;
 }
 
 .username {
   margin-bottom: 10px;
+}
+
+.about-us ul {
+  list-style-type: disc;
+  margin-left: 32px;
+  margin-top: 12px;
 }
 
 @media (max-width: 480px) {
